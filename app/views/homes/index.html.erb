@@ -34,14 +34,11 @@
           <%= link_to "チャット", "#", class: "nav-link" %>
         </li>
       </ul>
-    
-      <ul class='nav-right'>
-       <% if user_signed_in? %>
-      <li><%= link_to current_user.name, root_path, class: "user-name" %></li>
-      <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></li>
-      <% end %>
-       </ul>
-     </div>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="探す" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">search</button>
+      </form>
+    </div>
     </nav>
 
     <!-- image -->
