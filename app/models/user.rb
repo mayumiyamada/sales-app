@@ -16,7 +16,7 @@ class User < ApplicationRecord
   format: { with: /\A[ぁ-んァ-ン一-龥]/, message: '全角で登録してください' } 
   
   validates :password,
-  format: { with: /\A(?=.*?[a-zA-Z])(?=.*?\d)[a-zA-Z\d]{8,}\z/, message: '全角英数字8文字以上で入力してください' }
+  format: { with: /\A(?=.*?[a-zA-Z])(?=.*?\d)[a-zA-Z\d]{8,}\z/, message: '半角英数字8文字以上で入力してください' }
   end
 
   has_many :tweets
