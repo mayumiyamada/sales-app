@@ -1,0 +1,8 @@
+ja:
+ activerecord:
+   attributes:
+     user:
+     tweet:
+       hotel_name : ホテル名
+       content: 口コミ
+       image: 画像
