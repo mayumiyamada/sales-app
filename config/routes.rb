@@ -4,4 +4,4 @@ Rails.application.routes.draw do
   root to: 'homes#index'
   resources :users, only: [:edit, :update, :show]
   resources :tweets
-end
+end 
